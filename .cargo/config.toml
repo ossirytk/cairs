@@ -3,7 +3,7 @@ rustflags = ["-C", "target-cpu=native"]
 
 [target.aarch64-apple-darwin]
 [build]
-rustflags = ["-C", "target-cpu=native"]
+rustflags = ["-C", "target-cpu=native", "-Clink-arg=-fuse-ld=lld", "-Ctarget-cpu=native"]
 
 [target.wasm32-unknown-unknown]
 rustflags = ["-C", "target-feature=+simd128"]

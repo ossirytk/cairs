@@ -1,4 +1,5 @@
 /target
+/gguf_models
 .ruff_cache
 .vscode
 *.a
